@@ -1,8 +1,9 @@
 step 1: winget install -e --id BrechtSanders.WinLibs.POSIX.UCRT
 --accept-source-agreements --accept-package-agreements
 
+step 2: restart powershell
 
-step 2: cd $HOME\Downloads
+step 3: cd $HOME\Downloads
 Remove-Item -Recurse -Force PriceFilter -ErrorAction SilentlyContinue
 Expand-Archive -Force PriceFilter.zip .
 cd PriceFilter
