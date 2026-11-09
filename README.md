@@ -8,9 +8,9 @@ Search 100,000 product listings from Amazon, Walmart and Target, filter them by 
 
 You just need a C++17 compiler.
 
-Download the full price_filter files structure into the downloads folder as a zip file
+Download the full PriceChecker_DSA-main.zip folder structure into the downloads folder as a zip file
 
-On Mac or Linux, open a terminal in the project folder and run make, then ./price_filter
+On Mac or Linux, open a terminal in the project folder and run make, then ./PriceChecker_DSA-main
 
 On Windows, run this in PowerShell from the project folder:
 
