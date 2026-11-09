@@ -14,11 +14,13 @@ On Mac or Linux, open a terminal in the project folder and run make, then ./Pric
 
 On Windows, run this in PowerShell from the project folder:
 
-g++ -std=c++17 -O2 -Isrc -o price_filter.exe src/main.cpp src/Utils.cpp src/DataGenerator.cpp src/DataLoader.cpp src/MergeSort.cpp src/QuickSort.cpp src/Benchmark.cpp src/ProductFilter.cpp src/Menu.cpp
+cd "$HOME\Downloads\PriceChecker_DSA-main"
 
-g++ -std=c++17 (Get-ChildItem .\src\*.cpp | ForEach-Object FullName) -I .\include -o price_filter.exe
+cd .\PriceChecker_DSA-main
 
-then .\price_filter.exe
+g++ -std=c++17 -O2 -Isrc -Iinclude -o price_filter.exe (Get-ChildItem .\src\*.cpp | ForEach-Object FullName)
+
+.\price_filter.exe
 
 The first time it runs it creates products.csv with all 100,000 products. You can also run it with --regenerate to rebuild that file, or --benchmark to just run the benchmark. make test runs the tests.
 
